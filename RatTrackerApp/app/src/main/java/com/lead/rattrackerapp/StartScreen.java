@@ -24,7 +24,13 @@ public class StartScreen extends AppCompatActivity {
             }
         });
 
-
+        signUpButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(StartScreen.this, SignUpScreen.class);
+                startActivity(intent);
+            }
+        });
 
     }
 }
